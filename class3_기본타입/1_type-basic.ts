@@ -11,4 +11,19 @@ let heroes: Array<string> = ["Capt", "thor", "Hulk"]
 let itmes: number[] = [1, 2, 3]
 
 // TS 튜플
-let address: string[] = []
+// 특정 순서의 타입 정의하는 것
+let address: [string, number] = ['gangnam', 100]
+
+// TS 객체
+let obj:object = {};
+// let person: object = {
+//     name: 'capt',
+//     age: 100
+// }
+let person: {name: string, age: number} = {
+    name: 'yerm',
+    age: 27
+}
+
+// TS 진위값
+let show: boolean = true;
