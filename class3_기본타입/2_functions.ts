@@ -1,9 +1,9 @@
 // 함수의 파라미터에 타입을 정의하는 방식
-function sum(a: number, b: number) {
+function sum_ts(a: number, b: number) {
     return a + b
 }
 
-sum(10, 20);
+sum_ts(10, 20);
 
 
 
@@ -17,3 +17,7 @@ function add() : number {
 function sum2(a: number, b : number):number {
     return a + b
 }
+// sum2(10, 20, 30, 40) // 30, 2개 초과의 인자를 받지 않는다 
+sum2(10, 20)
+
+
