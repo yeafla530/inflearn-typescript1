@@ -8,6 +8,7 @@ let num: number = 10;
 // TS 배열
 let arr: Array<number> = [1, 2, 3] 
 let heroes: Array<string> = ["Capt", "thor", "Hulk"]
+// 배열안에 숫자가 들어간다
 let itmes: number[] = [1, 2, 3]
 
 // TS 튜플
