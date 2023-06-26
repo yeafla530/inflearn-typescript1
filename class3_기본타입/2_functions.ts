@@ -21,3 +21,10 @@ function sum2(a: number, b : number):number {
 sum2(10, 20)
 
 
+// 함수의 옵셔널 파라미터
+// ?: => 옵셔널 파라미터, 넣어도 되고 안넣어도 됨
+function log(a: string, b?: string) {
+    console.log(a)
+}
+log('hello world')
+// log('hello ts', new Person());
