@@ -6,7 +6,7 @@ let str2: string= 'hello'
 // TS 숫자
 let num: number = 10;
 // TS 배열
-let arr: Array<number> = [1, 2, 3] 
+let arr2: Array<number> = [1, 2, 3] 
 let heroes: Array<string> = ["Capt", "thor", "Hulk"]
 // 배열안에 숫자가 들어간다
 let itmes: number[] = [1, 2, 3]
@@ -16,7 +16,7 @@ let itmes: number[] = [1, 2, 3]
 let address: [string, number] = ['gangnam', 100]
 
 // TS 객체
-let obj:object = {};
+let obj2:object = {};
 // let person: object = {
 //     name: 'capt',
 //     age: 100
