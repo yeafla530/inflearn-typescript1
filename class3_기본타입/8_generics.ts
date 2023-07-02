@@ -126,6 +126,12 @@ interface ShoppingItem {
 
 // 쇼핑아이템 key들중 한가지가 type이 된다
 function getShoppingItemOPtion<T extends keyof ShoppingItem>(itemOption: T): T {
+    let item: ShoppingItem = {
+        name: "tumbler",
+        price: 12000,
+        stock: 10
+      }
+      console.log(item[itemOption]);
     return itemOption
 }
 
