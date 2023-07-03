@@ -230,3 +230,68 @@
   
 
   
+
+### 0703
+
+* 이전까지 배운 내용 바탕으로 과제 진행
+
+* Promise를 return할 시 Promise<반환타입>으로 타입을 정의해준다
+
+  ```typescript
+  function fetchContacts(): Promise<Contact[]> {
+    const contacts: Contact[] = [
+      {
+        name: 'Tony',
+        address: 'Malibu',
+        phones: {
+          home: {
+            num: 11122223333,
+          },
+          office: {
+            num: 44455556666,
+          },
+        },
+      },
+      ...
+    ];
+    return new Promise(resolve => {
+      setTimeout(() => resolve(contacts), 2000);
+    });
+  }
+  ```
+
+  
+
+* 실제 서비스 개발 시 더 명확한 개발을 위해서 enum사용
+
+  * phoneType에 들어갈 수 있는 변수가 home, office, studio인데 입력 시 오타를 낼 수 있기 때문에 명확한 선언을 하기위해 enum 설정
+
+  ```
+  interface PhoneNumberDictionary {
+    [phone: string]: {
+      num: number;
+    };
+  }
+  
+  interface Contact {
+    name: string;
+    address: string;
+    phones: PhoneNumberDictionary;
+  }
+  enum PhoneType {
+    Hoem = 'home', 
+    Office = 'office',
+    Studio = 'studio'
+  }
+  
+  findContactByPhone(phoneNumber: number, phoneType: PhoneType): Contact[] {
+      return this.contacts.filter(
+      	contact => contact.phones[phoneType].num === phoneNumber
+      );
+  }
+  ```
+
+  
+
+  
+
