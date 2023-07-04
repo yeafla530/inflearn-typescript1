@@ -1,21 +1,24 @@
-// 어떤 key값이 오던간에 받을 수있음
-interface PhoneNumberDictionary {
-  [phone: string]: {
-    num: number;
-  };
-}
+// // 어떤 key값이 오던간에 받을 수있음
+// interface PhoneNumberDictionary {
+//   [phone: string]: {
+//     num: number;
+//   };
+// }
 
-interface Contact {
-  name: string;
-  address: string;
-  phones: PhoneNumberDictionary;
-}
+// interface Contact {
+//   name: string;
+//   address: string;
+//   phones: PhoneNumberDictionary;
+// }
 
-enum PhoneType {
-  Hoem = 'home', 
-  Office = 'office',
-  Studio = 'studio'
-}
+// enum PhoneType {
+//   Hoem = 'home', 
+//   Office = 'office',
+//   Studio = 'studio'
+// }
+
+import {Contact, PhoneType} from './types'
+
 
 // api
 // TODO: 아래 함수의 반환 타입을 지정해보세요.

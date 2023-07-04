@@ -61,5 +61,5 @@ var notempty2: NotEmpty<number> = {
 }
 
 // 내부 타입이 정의되어있기 때문에 같지않음
-notempty1 = notempty2
+// notempty1 = notempty2
 

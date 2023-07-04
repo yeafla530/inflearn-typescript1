@@ -3,7 +3,7 @@
 
 ////// 1. 타입 추론 기본
 // 타입이 무엇인지 알려주는 "타입추론"
-let a = 10;
+let abbbb = 10;
 
 // 기본값 10 설정
 // function getB(b?: number): string
